@@ -1,0 +1,25 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "{ecae18d0-767f-449c-9956-c17a8058d0dd}"
+    }
+  },
+  "manifest_version": 2,
+  "name": "Custom DOI resolver",
+  "description": "A browser extention that redirect DOIs to a user defined resolver.",
+  "version": "0.1",
+  "homepage_url": "https://github.com/TheMrBen/custom-doi-resolver",
+  "permissions": [
+    "menus",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background_script.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/index.html",
+    "browser_style": true
+  }
+}
