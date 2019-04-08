@@ -5,9 +5,14 @@
   </head>
   <body>
     <form>
-      <label for="resolver-url">Resolver URL:</label>
-      <input type="URL" id="resolver-url">
-      <button type="submit">Update</button>
+      <div>
+        <label for="resolver-url">Resolver URL:</label>
+        <input type="URL" id="resolver-url" required>
+      </div>
+      <div>
+        <input type="checkbox" id="auto-redirect"/>
+        <label for="auto-redirect">Enable automatic redirection</label>
+      </div>
     </form>
     <script src="script.js"></script>
   </body>

@@ -7,11 +7,14 @@
   "manifest_version": 2,
   "name": "Custom DOI resolver",
   "description": "A browser extention that redirect DOIs to a user defined resolver.",
-  "version": "0.1",
+  "version": "0.2",
   "homepage_url": "https://github.com/TheMrBen/custom-doi-resolver",
   "permissions": [
     "menus",
-    "storage"
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.doi.org/*"
   ],
   "background": {
     "scripts": [
