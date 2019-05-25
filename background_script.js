@@ -31,6 +31,25 @@ browser.menus.onClicked.addListener(function(info) {
   }
 });
 
+browser.omnibox.onInputEntered.addListener((text, disposition) => {
+  let doi = text.match(re);
+  if (doi) {
+    resolve(doi[0]).then( value => {
+      switch (disposition) {
+        case "currentTab":
+          browser.tabs.update({ url: value });
+          break;
+        case "newForegroundTab":
+          browser.tabs.create({ url: value });
+          break;
+        case "newBackgroundTab":
+          browser.tabs.create({ url: value, active: false });
+          break;
+      }
+    } );
+  }
+});
+
 browser.webRequest.onBeforeRequest.addListener(
   async function(details) {
     let doi = details.url.match(re);

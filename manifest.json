@@ -24,5 +24,8 @@
   "options_ui": {
     "page": "options/index.html",
     "browser_style": true
+  },
+  "omnibox": {
+    "keyword": "doi"
   }
 }
