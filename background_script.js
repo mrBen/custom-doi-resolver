@@ -13,9 +13,15 @@ async function resolve(doi) {
 }
 
 browser.menus.create({
-  id: 'menuItem',
-  title: 'Open as DOI',
-  contexts: ['link', 'selection']
+  id: 'menuLink',
+  title: 'Open Link as DOI',
+  contexts: ['link']
+});
+
+browser.menus.create({
+  id: 'menuSelection',
+  title: 'Open Selection as DOI',
+  contexts: ['selection']
 });
 
 browser.menus.onClicked.addListener(function(info) {
