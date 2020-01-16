@@ -1,14 +1,13 @@
 {
-  "applications": {
-    "gecko": {
-      "id": "{ecae18d0-767f-449c-9956-c17a8058d0dd}"
-    }
-  },
   "manifest_version": 2,
   "name": "Custom DOI resolver",
   "description": "A browser extention that redirect DOIs to a user defined resolver.",
-  "version": "0.3",
-  "homepage_url": "https://github.com/TheMrBen/custom-doi-resolver",
+  "version": "0.4.0",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "homepage_url": "https://github.com/mrBen/custom-doi-resolver",
   "permissions": [
     "menus",
     "storage",
@@ -21,11 +20,31 @@
       "background_script.js"
     ]
   },
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "options/index.html",
+    "default_title": "Custom DOI resolver",
+    "theme_icons": [{
+      "light": "icons/icon-16-light.png",
+      "dark": "icons/icon-16-dark.png",
+      "size": 16
+    }, {
+      "light": "icons/icon-32-light.png",
+      "dark": "icons/icon-32-dark.png",
+      "size": 32
+    }]
+  },
   "options_ui": {
     "page": "options/index.html",
     "browser_style": true
   },
   "omnibox": {
     "keyword": "doi"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{ecae18d0-767f-449c-9956-c17a8058d0dd}",
+      "strict_min_version": "57.0"
+    }
   }
 }
