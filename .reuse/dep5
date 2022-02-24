@@ -10,3 +10,7 @@ License: CECILL-2.1
 Files: manifest.json
 Copyright: 2020 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CECILL-2.1
+
+Files: package*.json
+Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
+License: CC0-1.0
