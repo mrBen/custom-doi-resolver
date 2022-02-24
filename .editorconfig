@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
