@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2019 Benjamin Collet <benjamin.collet@protonmail.ch>
+//
+// SPDX-License-Identifier: CECILL-2.1
+
 let re = /10\.\d{4,9}\/[\-._;()i\/:A-Z0-9]+/i;
 
 async function resolve(doi) {

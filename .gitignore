@@ -1,2 +1,6 @@
+# SPDX-FileCopyrightText: 2019 Benjamin Collet <benjamin.collet@protonmail.ch>
+#
+# SPDX-License-Identifier: CC0-1.0
+
 .web-extension-id
 web-ext-artifacts/
