@@ -13,7 +13,7 @@
   },
   "homepage_url": "https://github.com/mrBen/custom-doi-resolver",
   "permissions": [
-    "menus",
+    "contextMenus",
     "storage",
     "webRequest",
     "webRequestBlocking",

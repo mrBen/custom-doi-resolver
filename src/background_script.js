@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2019 Benjamin Collet <benjamin.collet@protonmail.ch>
+// SPDX-FileCopyrightText: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 //
 // SPDX-License-Identifier: CECILL-2.1
 
@@ -17,19 +17,19 @@ async function resolve(doi) {
   return url + doi;
 }
 
-browser.menus.create({
+browser.contextMenus.create({
   id: 'menuLink',
   title: 'Open Link as DOI',
   contexts: ['link'],
 });
 
-browser.menus.create({
+browser.contextMenus.create({
   id: 'menuSelection',
   title: 'Open Selection as DOI',
   contexts: ['selection'],
 });
 
-browser.menus.onClicked.addListener((info) => {
+browser.contextMenus.onClicked.addListener((info) => {
   let input;
   if (info.linkUrl) {
     input = decodeURIComponent(info.linkUrl);
