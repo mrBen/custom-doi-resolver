@@ -7,7 +7,7 @@ Files: src/icons/*
 Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CECILL-2.1
 
-Files: src/manifest.json
+Files: manifest.json
 Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CECILL-2.1
 
@@ -22,3 +22,7 @@ License: CC0-1.0
 Files: .eslintrc.json
 Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CC0-1.0
+
+Files: browser-polyfill*.js
+Copyright: 2021 Mozilla
+License: MPL-2.0
