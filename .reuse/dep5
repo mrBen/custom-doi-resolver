@@ -18,3 +18,7 @@ License: CC0-1.0
 Files: script/*
 Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CC0-1.0
+
+Files: .eslintrc.json
+Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
+License: CC0-1.0

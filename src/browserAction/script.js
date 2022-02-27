@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2020 Benjamin Collet <benjamin.collet@protonmail.ch>
+// SPDX-FileCopyrightText: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 //
 // SPDX-License-Identifier: CECILL-2.1
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   browser.storage.sync.get(['resolverUrl', 'autoRedirect']).then((value) => {
-    document.getElementById('resolver-url').value = value.resolverUrl || "https://doi.org/";
+    document.getElementById('resolver-url').value = value.resolverUrl || 'https://doi.org/';
     document.getElementById('auto-redirect').checked = value.autoRedirect;
-  })
+  });
 });
 
-document.querySelector('form').addEventListener('change', function() {
+document.querySelector('form').addEventListener('change', () => {
   browser.storage.sync.set({
     resolverUrl: document.getElementById('resolver-url').value,
-    autoRedirect: document.getElementById('auto-redirect').checked
+    autoRedirect: document.getElementById('auto-redirect').checked,
   });
 });
