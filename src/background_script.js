@@ -65,7 +65,8 @@ browser.omnibox.onInputEntered.addListener((text, disposition) => {
 
 browser.webRequest.onBeforeRequest.addListener(
   async (details) => {
-    const doi = details.url.match(re);
+    // Wikipedia generate URI encoded links (e.g. https://doi.org/10.2307%2F2312726)
+    const doi = decodeURIComponent(details.url).match(re);
     if (doi) {
       const value = await browser.storage.sync.get(['resolverUrl', 'autoRedirect']);
       if (value.autoRedirect && !value.resolverUrl.includes('doi.org')) {
