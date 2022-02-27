@@ -3,8 +3,8 @@
     "web-ext": "^6.7.0"
   },
   "scripts": {
-    "start:firefox": "web-ext run",
-    "lint": "web-ext lint",
-    "build": "web-ext build --ignore-files LICENSES package*.json README.md"
+    "start:firefox": "web-ext run --source-dir ./src/",
+    "lint": "web-ext lint --source-dir ./src/",
+    "build": "web-ext build --source-dir ./src/"
   }
 }

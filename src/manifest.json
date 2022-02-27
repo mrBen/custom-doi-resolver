@@ -35,7 +35,7 @@
       "128": "icons/icon-128.png"
     },
     "default_title": "Custom DOI resolver",
-    "default_popup": "options/index.html",
+    "default_popup": "browserAction/index.html",
     "theme_icons": [{
       "light": "icons/icon-16-light.png",
       "dark": "icons/icon-16-dark.png",
@@ -63,7 +63,7 @@
     }]
   },
   "options_ui": {
-    "page": "options/index.html",
+    "page": "browserAction/index.html",
     "browser_style": true
   },
   "omnibox": {

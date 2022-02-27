@@ -3,11 +3,11 @@ Upstream-Name: Custom DOI resolver
 Upstream-Contact: Benjamin Collet <benjamin.collet@protonmail.ch>
 Source: https://github.com/mrBen/custom-doi-resolver
 
-Files: icons/*
+Files: src/icons/*
 Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CECILL-2.1
 
-Files: manifest.json
+Files: src/manifest.json
 Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CECILL-2.1
 
