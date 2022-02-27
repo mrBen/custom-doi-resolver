@@ -4,11 +4,11 @@ Upstream-Contact: Benjamin Collet <benjamin.collet@protonmail.ch>
 Source: https://github.com/mrBen/custom-doi-resolver
 
 Files: icons/*
-Copyright: 2020 Benjamin Collet <benjamin.collet@protonmail.ch>
+Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CECILL-2.1
 
 Files: manifest.json
-Copyright: 2020 Benjamin Collet <benjamin.collet@protonmail.ch>
+Copyright: 2022 Benjamin Collet <benjamin.collet@protonmail.ch>
 License: CECILL-2.1
 
 Files: package*.json
