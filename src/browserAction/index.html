@@ -8,18 +8,28 @@ SPDX-License-Identifier: CECILL-2.1
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <!-- <link href="style.css" rel="stylesheet" /> -->
   </head>
-  <body class="browser-style">
-    <form class="panel-section panel-section-formElements">
-      <div class="panel-formElements-item">
-        <label for="resolver-url">Resolver URL:</label>
-        <input type="URL" id="resolver-url" required>
+  <body>
+
+    <header class="panel-section panel-section-header">
+      <div class="icon-section-header"><img src="../icons/icon-32.png"/></div>
+      <div class="text-section-header">Custom DOI resolver</div>
+    </header>
+
+    <div class="panel-section panel-section-formElements" id="resolver-list">
+      <div class="browser-style panel-formElements-item" id="new-item">
+        <input type="radio" style="visibility: hidden">
+        <button><img src="../icons/Photon/New.svg" alt="New"></button>
       </div>
-      <div class="panel-formElements-item">
-        <input type="checkbox" id="auto-redirect"/>
-        <label for="auto-redirect">Enable automatic redirection</label>
-      </div>
-    </form>
+    </div>
+
+    <footer class="panel-section panel-section-footer">
+      <button class="browser-style panel-section-footer-button" id="auto-redirect">
+        Automatic redirection: <span></span>
+      </button>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

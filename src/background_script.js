@@ -69,7 +69,9 @@ browser.webRequest.onBeforeRequest.addListener(
     const doi = decodeURIComponent(details.url).match(re);
     if (doi) {
       const value = await browser.storage.sync.get(['resolverUrl', 'autoRedirect']);
-      if (value.autoRedirect && !value.resolverUrl.includes('doi.org')) {
+      if (value.autoRedirect
+          && value.resolverUrl !== ''
+          && !value.resolverUrl.includes('doi.org')) {
         const url = await resolve(doi[0]);
         return { redirectUrl: url };
       }
