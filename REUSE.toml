@@ -1,0 +1,46 @@
+version = 1
+SPDX-PackageName = "Custom DOI resolver"
+SPDX-PackageSupplier = "Benjamin Collet <benjamin.collet@protonmail.ch>"
+SPDX-PackageDownloadLocation = "https://github.com/mrBen/custom-doi-resolver"
+
+[[annotations]]
+path = "src/icons/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Benjamin Collet <benjamin.collet@protonmail.ch>"
+SPDX-License-Identifier = "CECILL-2.1"
+
+[[annotations]]
+path = "src/icons/Photon/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Mozilla"
+SPDX-License-Identifier = "MPL-2.0"
+
+[[annotations]]
+path = "src/manifest.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 Benjamin Collet <benjamin.collet@protonmail.ch>"
+SPDX-License-Identifier = "CECILL-2.1"
+
+[[annotations]]
+path = "package**.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022-2025 Benjamin Collet <benjamin.collet@protonmail.ch>"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "script/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Benjamin Collet <benjamin.collet@protonmail.ch>"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "eslint.config.mjs"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 Benjamin Collet <benjamin.collet@protonmail.ch>"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/screenshots/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Benjamin Collet <benjamin.collet@protonmail.ch>"
+SPDX-License-Identifier = "CECILL-2.1"
