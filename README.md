@@ -1,8 +1,12 @@
 <!--
-SPDX-FileCopyrightText: 2022-2023 Benjamin Collet <benjamin.collet@protonmail.ch>
+SPDX-FileCopyrightText: 2022-2025 Benjamin Collet <benjamin.collet@protonmail.ch>
 
 SPDX-License-Identifier: CECILL-2.1
 -->
+
+> [!NOTE]
+> I no longer wish to maintain this extension, so it will no longer be updated.
+> It should continue to work, but if it breaks, or if you want new features, don't hesitate to fork it.
 
 <img style="vertical-align: middle;" src="src/icons/icon.svg" width="120" height="120" align="left">
 
